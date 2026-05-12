@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohit Tiwari | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: white;
+        }
+
+        nav {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav h2 {
+            color: #00aaff;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .hero {
+            width: 100%;
+            padding: 150px 40px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .left h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .left p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .btn {
+            background: #00aaff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 260px;
+        }
+
+        .right img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00aaff;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            padding: 80px 40px;
+            background: #111;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #00aaff;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        /* SKILLS SECTION */
+        .skills {
+            padding: 80px 40px;
+        }
+
+        .skills h2 {
+            margin-bottom: 25px;
+            color: #00aaff;
+            font-size: 32px;
+        }
+
+        .skill-box {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: #111;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border-left: 4px solid #00aaff;
+            font-size: 18px;
+        }
+
+        /* PROJECTS */
+        .projects {
+            padding: 80px 40px;
+            background: #111;
+        }
+
+        .projects h2 {
+            margin-bottom: 25px;
+            color: #00aaff;
+            font-size: 32px;
+        }
+
+        .project-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+        }
+
+        .contact {
+            padding: 80px 40px;
+        }
+
+        .contact h2 {
+            margin-bottom: 25px;
+            color: #00aaff;
+            font-size: 32px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+            }
+
+            .left h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Mohit.dev</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="left">
+            <h1>Hello, I'm <span style="color:#00aaff;">Mohit Tiwari</span></h1>
+            <p>I'm a passionate <b>Frontend Developer</b> who loves creating clean, modern and responsive websites.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="right">
+            <img src="mohit.jpg" alt="Your Photo" />
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Mohit Tiwari, a Computer Science student and enthusiastic Frontend Developer. I love turning ideas into real websites using HTML, CSS, and JavaScript. My goal is to become a professional developer and build amazing digital products.I constantly try to improve my skills by learning new concepts, exploring real-world projects, and contributing to tech events and hackathons.
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">C/C++</div>
+            <div class="skill">Git/ Github</div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <br>
+            <p style="text-align: center;"><b> Vita Health AI</b> </p>
+            <br> 
+            <p> Smart Medical Appointment & Health Assistant
+Vita Health AI is a modern healthcare web application designed to simplify doctor appointments and provide instant health support.
+The platform allows users to register, log in, book appointments, view appointment history, and search doctors based on specialization.
+            </p><br>
+<ul> 
+    <h4>➤ The project Features:-</h4>
+    <li>User authentication (Register/Login)</li>
+    <li>Doctor listing with specialization</li>
+    <li>Appointment booking system</li>
+    <li>Appointment history page</li>
+    <li>Smart search feature</li>
+    <li>Contact doctor option</li>
+    <li>Integrated AI-based Q&A health chatbot</li>
+    <li>Fully responsive UI</li>
+</ul></p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Project description here...</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 style="text-align:center; margin-bottom:40px;">Contact Me</h2>
+
+        <form style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:20px;">
+            <input type="text" placeholder="Your Name" style="padding:12px; background:#0f0f0f; border:1px solid #333; border-radius:5px; color:white;">
+            <input type="email" placeholder="Your Email" style="padding:12px; background:#0f0f0f; border:1px solid #333; border-radius:5px; color:white;">
+            <textarea placeholder="Your Message" rows="5" style="padding:12px; background:#0f0f0f; border:1px solid #333; border-radius:5px; color:white;"></textarea>
+            <button style="padding:12px; background:#00aaff; border:none; border-radius:5px; font-weight:bold; cursor:pointer;">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 Mohit Tiwari. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
